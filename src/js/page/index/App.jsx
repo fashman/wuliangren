@@ -21,7 +21,7 @@ export default class App extends Component {
   render() {
     return(
       <div className={styles.app}>
-        <UserList dataSource={this.props.list} />
+        <UserList dataSource={this.state.users} />
       </div>
     )
   }
