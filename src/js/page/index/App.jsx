@@ -14,7 +14,7 @@ export default class App extends Component {
     axios({
       url: 'https://api.github.com/users',
     }).then(res => {
-      const users = res;
+      const users = res.data;
       this.setState({ users });
     })
   }
