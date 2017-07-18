@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'antd';
-import styles from './style.mod.less';
+import styles from './style.less';
 
 export default class Users extends Component {
   constructor(props) {
