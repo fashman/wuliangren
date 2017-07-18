@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
-import { Table } from 'antd';
-import styles from './style.less';
+import {  } from 'antd';
 
 export default class Users extends Component {
-  constructor(props) {
-    super(props);
-
-    this.columns = [{
-      title: 'id',
-      dataIndex: 'id',
-      key: 'id',
-    }, {
-      title: 'name',
-      dataIndex: 'login',
-      key: 'login',
-    }];
-  }
-
   render() {
+    const users = this.props.data;
     return(
-      <div className={styles.users}>
-        <Table dataSource={this.props.dataSource} columns={this.columns} rowKey="id" />
+      <div>
+        {
+          users && users.length ? users.map((val, num)=>(
+            <img src={val.avatar_url} alt={val.login} />
+          )) : '<p>还没有人关注你哦！</p>'
+        }
       </div>
     )
   }

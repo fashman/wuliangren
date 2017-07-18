@@ -22,12 +22,15 @@ export default class App extends Component {
   render() {
     return(
       <div className={styles.app}>
-        <MenuList />
+        <div className={styles.menu}>
+          <MenuList />
+        </div>
         <div className={styles.container}>
           <div className={styles.content}></div>
-          <div className={styles.fllows}></div>
+          <div className={styles.fllows}>
+            <UserList dataSource={this.state.users} />
+          </div>
         </div>
-        <UserList dataSource={this.state.users} />
       </div>
     )
   }
