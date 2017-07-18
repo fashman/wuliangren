@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {  } from 'antd';
 
 export default class Users extends Component {
   render() {
@@ -9,7 +8,7 @@ export default class Users extends Component {
         {
           users && users.length ? users.map((val, num)=>(
             <img key={num} src={val.avatar_url} alt={val.login} />
-          )) : (<p>还没有人关注你哦！</p>)
+          )) : (<p style={{textAlign: 'center'}}>还没有人关注你哦！</p>)
         }
       </div>
     )

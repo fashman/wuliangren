@@ -25,7 +25,7 @@ export default class MenuList extends React.Component {
         mode="horizontal"
       >
         <Menu.Item key="mail">
-          <Icon type="mail" />我
+          我
         </Menu.Item>
         <Menu.Item key="app" disabled>
           <Icon type="appstore" />我的足迹
@@ -41,7 +41,9 @@ export default class MenuList extends React.Component {
           </MenuItemGroup>
         </SubMenu>
         <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">联系我</a>
+          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+            <Icon type="mail" />联系我
+          </a>
         </Menu.Item>
       </Menu>
     );
