@@ -8,8 +8,8 @@ export default class Users extends Component {
       <div>
         {
           users && users.length ? users.map((val, num)=>(
-            <img src={val.avatar_url} alt={val.login} />
-          )) : '<p>还没有人关注你哦！</p>'
+            <img key={num} src={val.avatar_url} alt={val.login} />
+          )) : (<p>还没有人关注你哦！</p>)
         }
       </div>
     )
