@@ -42,6 +42,12 @@ const config = {
       minChunks: Math.ceil(entrysArr.length * 2 / 3),
     }),
     new ExtractTextPlugin('[name].css')
+    // new ExtractTextPlugin({
+    //   filename: (getPath) => {
+    //     console.log(getPath('[name].css'));
+    //     return getPath('[name].css').replace('js','css');
+    //   }
+    // })
   ],
   resolve: {
     modulesDirectories: ['node_modules', path.join(__dirname, '../node_modules')],
@@ -66,7 +72,7 @@ const config = {
       },
       {
         test: /\.mod\.(less|css)$/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss?parser=postcss-less')
+        loader: ExtractTextPlugin.extract('style','css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss?parser=postcss-less')
       },
       {
         test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,

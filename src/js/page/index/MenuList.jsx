@@ -24,9 +24,7 @@ export default class MenuList extends React.Component {
         selectedKeys={[this.state.current]}
         mode="horizontal"
       >
-        <Menu.Item key="mail">
-          我
-        </Menu.Item>
+        <Menu.Item key="mail">我</Menu.Item>
         <Menu.Item key="app" disabled>
           <Icon type="appstore" />我的足迹
         </Menu.Item>

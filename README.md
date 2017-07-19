@@ -1,6 +1,6 @@
 ### 仁者无敌__吴亮仁
 
-> [我的简介](https://fashman.github.io/wuliangren/index.html)
+> [我的简介](https://fashman.github.io/wuliangren/dist/index.html)
 
 ### 安装
 
