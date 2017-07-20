@@ -28,14 +28,14 @@ export default class MenuList extends React.Component {
         <Menu.Item key="app" disabled>
           <Icon type="appstore" />我的足迹
         </Menu.Item>
-        <SubMenu title={<span><Icon type="setting" />我的项目</span>}>
-          <MenuItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
-            <Menu.Item key="setting:2">Option 2</Menu.Item>
+        <SubMenu title={<span><Icon type="setting" />我的经历</span>}>
+          <MenuItemGroup title="2015 - 2017">
+            <Menu.Item key="setting:1">A</Menu.Item>
+            <Menu.Item key="setting:2">B</Menu.Item>
           </MenuItemGroup>
-          <MenuItemGroup title="Item 2">
-            <Menu.Item key="setting:3">Option 3</Menu.Item>
-            <Menu.Item key="setting:4">Option 4</Menu.Item>
+          <MenuItemGroup title="2014 - 2015">
+            <Menu.Item key="setting:3">C</Menu.Item>
+            <Menu.Item key="setting:4">D</Menu.Item>
           </MenuItemGroup>
         </SubMenu>
         <Menu.Item key="alipay">
