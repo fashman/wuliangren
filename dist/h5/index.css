@@ -1,0 +1,234 @@
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+*,:after,:before {
+  box-sizing: border-box
+}
+
+body,html {
+  width: 100%;
+  height: 100%
+}
+
+body {
+  font-family: Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(0,0,0,.65);
+  background-color: #fff
+}
+
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul {
+  margin: 0;
+  padding: 0
+}
+
+button,input,select,textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  -webkit-appearance: none
+}
+
+ol,ul {
+  list-style: none
+}
+
+.wrap {
+  max-width: 7.50rem;
+  margin: 0 auto;
+  background-color: #fdeaa9;
+  padding-bottom: .01rem;
+}
+
+.banner{
+  position: relative;
+  margin-bottom: .5rem;
+}
+.banner img {
+  display: block;
+  width: 100%;
+}
+.banner a {
+  width: 3.15rem;
+  height: .57rem;
+  position: absolute;
+  top: .23rem;
+  left: .24rem;
+  background: url('./images/logo.png') no-repeat center;
+  background-size: 3.15rem auto;
+}
+
+.box {
+  margin: 0 .33rem .7rem;
+  background-color: #fff;
+  padding: .5rem .35rem;
+  position: relative;
+  font-size: .28rem;
+  line-height: .38rem;
+}
+.box .tit {
+  position: absolute;
+  width: 3.9rem;
+  height: .6rem;
+  top: -.22rem;
+  left: 50%;
+  margin-left: -1.95rem;
+  background: url('./images/tit.png') no-repeat center;
+  background-size: 3.9rem auto;
+  text-align: center;
+  line-height: .6rem;
+  color: #fff;
+  font-size: .34rem;
+}
+.box .inbox {
+  overflow: hidden;
+}
+.box .money {
+  width: 5.8rem;
+  height: 4.6rem;
+  margin: .3rem auto .5rem;
+  display: block;
+}
+.box .button {
+  width: 5.7rem;
+  height: .88rem;
+  color: #fff;
+  text-align: center;
+  line-height: .88rem;
+  display: block;
+  margin: 0 auto;
+  background: url('./images/button.png') no-repeat center;
+  background-size: 5.7rem auto;
+  text-decoration: none;
+  font-size: .36rem;
+}
+.box .item {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: .4rem;
+  position: relative;
+}
+.box .item:first-child:after {
+  content: ' ';
+  position: absolute;
+  top: .25rem;
+  right: -1px;
+  width: 0;
+  height: 1.06rem;
+  border-right: 1px dashed #d2d2d2;
+}
+.box .item h3 {
+  font-size: .9rem;
+  line-height: .9rem;
+  color: #454544;
+  margin-top: .2rem;
+  font-weight: normal;
+}
+.box .item h3 .red {
+  color: #eb593e;
+  font-weight: 700;
+}
+.box .item h3 i {
+  font-style: normal;
+  font-size: .26rem;
+  margin-left: -.2rem;
+}
+.box .item p {
+  color: #929090;
+  /* color: #ccc; */
+  font-size: .24rem;
+  line-height: .24rem;
+  position: relative;
+  top: -.1rem;
+}
+.box-last {
+  margin-bottom: .46rem;
+  padding-bottom: .46rem;
+}
+.box-last .inbox > p {
+  text-indent: 2em;
+}
+.box-last ul {
+  margin-top: .46rem;
+}
+.box-last li {
+  height: 2.28rem;
+  width: 6.2rem;
+  background-color: #faf9f4;
+  position: relative;
+  padding: 0 .2rem 0 3.1rem;
+  margin-bottom: .24rem;
+  border-radius: 10px;
+}
+.box-last li.last {
+  margin-bottom: 0;
+}
+.box-last li h3 {
+  font-size: .32rem;
+  line-height: .32rem;
+  padding-top: .5rem;
+}
+.box-last li p {
+  font-size: .28rem;
+  line-height: .36rem;
+  color: #8f8e8e;
+  padding-top: .3rem;
+}
+.box-last li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-size: 2.1rem auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-last .icon1 {
+  background-image: url('./images/icon1.png');
+}
+.box-last .icon2 {
+  background-image: url('./images/icon2.png');
+}
+.box-last .icon3 {
+  background-image: url('./images/icon3.png');
+}
+
+.contact {
+  margin-bottom: .44rem;
+  text-align: center;
+}
+.contact p {
+  margin-bottom: .28rem;
+  font-size: .28rem;
+  line-height: .28rem;
+}
+.contact h3 {
+  font-size: .5rem;
+  margin-bottom: .28rem;
+  line-height: .5rem;
+}
+.contact h3 a {
+  color: #040404;
+  text-decoration: none;
+}
+.contact h4 {
+  font-size: .24rem;
+  line-height: .24rem;
+  font-weight: normal;
+}
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: .35rem 0;
+}
+
+.footer img {
+  width: 3.33rem;
+  height: .45rem;
+}
