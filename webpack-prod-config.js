@@ -21,7 +21,7 @@ const config = {
   entry: entrys,
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '//fashman.github.io/wuliangren/dist/',
+    publicPath: '//www.wuliangren.com/wuliangren/wuliangren/dist/',
     filename: '[name].js',
   },
   plugins: [
