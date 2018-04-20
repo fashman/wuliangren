@@ -98,7 +98,7 @@ for (let j = 0; j < entrysArr.length; j++) {
     filename: `${pathname}.html`,
     template: './src/template.html',
     inject: 'body',
-    favicon: './src/favicon.ico',
+    favicon: './favicon.ico',
     title: '仁者无敌__吴亮仁',
     hash: false,
     minify: {
