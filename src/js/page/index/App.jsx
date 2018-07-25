@@ -28,7 +28,7 @@ export default class App extends Component {
         <div className={styles.container}>
           <div className={styles.content}>
             <p>简简单单，简约之美</p>
-            <p>仁者无敌，无敌是寂寞！!!!</p>
+            <p>仁者无敌，无敌是寂寞!!!</p>
           </div>
           <div className={styles.fllows}>
             <UserList data={this.state.users} />
